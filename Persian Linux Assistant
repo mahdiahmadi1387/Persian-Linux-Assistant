@@ -1,3 +1,4 @@
+from os import rename
 import pyautogui
 import time
 
@@ -263,77 +264,121 @@ def checker_do_not_use(string , value):
     return string
 #--------------------------------------
 print(type_persian('سلام'))
-print(type_persian('من دستیار جدیدتم '))
-print(type_persian('کار هایی که من می تونم انجام بدم ایناس:'))
-print(type_persian(')۱(لیست برنامه ها رو نشونت بدم '))
-print(type_persian(')۲( برنامه نصب کنم'))
-print(type_persian(')۳(جستجو در توضیحات بسته انجام بدم'))
-print(type_persian(')۴(نمایش جزیات بسته رو بگم')) #yasin@yasin:~$ apt show unrar
-print(type_persian(')۵( کتابخونه پایتون نصب کنم'))
 
-print(type_persian('فقط اگه موقع تایپ کردن دیدی حروف جابه جا شده نگران نباش من می فهمم'))
-print(' \U0001F609')
-print(type_persian('حالا کدومو بدم؟ شماره اش را بنویس به انگلیسی باشه لطفا مثلا 1,2 و...'))
-skills = input()
-skills = int(skills)
+while True:
+    # print(type_persian('هر وقت خواستی خارج شی بگو) خروج ('))
+    
+    # get=input()
+    # if get == 'خروج':
+    #     break
 
-if skills == 1:
-    pyautogui.hotkey('ctrl', 'shift', '`')
-    time.sleep(1)
-    text = 'apt list'
-    speed = 0.1
-    pyautogui.write(text, interval=speed)
-    pyautogui.hotkey('enter')
+    # if "سلام" in get:
 
-#------------------------------------------------------------
+    print(type_persian(' کار هایی که من می تونم انجام بدم ایناس:'))
+    print(type_persian(')۱(لیست برنامه ها رو نشونت بدم '))
+    print(type_persian(')۲( برنامه نصب کنم'))
+    print(type_persian(')۳(جستجو در توضیحات بسته انجام بدم'))
+    print(type_persian(')۴(نمایش جزیات بسته رو بگم'))
+    print(type_persian(')۵( کتابخونه پایتون نصب کنم'))
 
-elif skills == 2:
-    print(type_persian('میشه پسوردت رو بگی لطفا؟'))
-    pas = input()
-    print(type_persian('اسم برنامه ات چی بود؟'))
-    app = input()
-    pyautogui.hotkey('ctrl', 'shift', '`')
-    time.sleep(1)
-    text = f'sudo apt install {app}'
-    speed = 0.1
-    pyautogui.write(text, interval=speed)
-    pyautogui.hotkey('enter')
-    time.sleep(1)
-    pyautogui.write(pas, interval=speed)
-    pyautogui.hotkey('enter')
+    print(type_persian('فقط اگه موقع تایپ کردن دیدی حروف جابه جا شده نگران نباش من می فهمم'))
+    print(' \U0001F609')
+    print(type_persian('حالا کدومو بدم؟ شماره اش را بنویس به انگلیسی باشه لطفا مثلا 1,2 و...'))
+    print(type_persian('اگه خواستی دیگه ادامه ندی باید بنویسی ) خروج ('))
+    print(type_persian('  فقط وقتی کار رو انجام دادم اون پنجره ی  )hsad(  رو ببند'))
+    skills = input()
+    if 'خروج' in skills :
+        break
 
-#----------------------------------------
+    elif skills == '1':
+        skills = int(skills)
+    elif skills == '2':
+        skills = int(skills)
+    elif skills == '3':
+        skills = int(skills)
+    elif skills == '4':
+        skills = int(skills)
+    elif skills == '5':
+        skills = int(skills)
+    
+    
+    else: 
+        while True:
+            print(type_persian('متوجه نشدم'))
+            skills_1 = input()
+            if skills_1 == 'خروج':
+                break
+            elif skills_1 == '1':
+                break
+            elif skills_1 == '2':
+                break
+            elif skills_1 == '3':
+                break
+            elif skills_1 == '4':
+                break
+            elif skills_1 == '5':
+                break
 
-elif skills == 3:
-    print(type_persian('اسم برنامه ات چی بود؟'))
-    app = input()
-    pyautogui.hotkey('ctrl', 'shift', '`')
-    time.sleep(1)
-    text = f'apt search {app}'
-    speed = 0.1
-    pyautogui.write(text, interval=speed)
-    pyautogui.hotkey('enter')
+    
+    if skills == 1:
+        pyautogui.hotkey('ctrl', 'shift', '`')
+        time.sleep(1)
+        text = 'apt list'
+        speed = 0.1
+        pyautogui.write(text, interval=speed)
+        pyautogui.hotkey('enter')
 
-#----------------------------
+        #------------------------------------------------------------
 
-elif skills == 4:
-    print(type_persian('اسم برنامه ات چی بود؟'))
-    app = input()
-    pyautogui.hotkey('ctrl', 'shift', '`')
-    time.sleep(1)
-    text = f'apt show {app}'
-    speed = 0.1
-    pyautogui.write(text, interval=speed)
-    pyautogui.hotkey('enter')
+    elif skills == 2:
+        print(type_persian('میشه پسوردت رو بگی لطفا؟'))
+        pas = input()
+        print(type_persian('اسم برنامه ات چی بود؟'))
+        app = input()
+        pyautogui.hotkey('ctrl', 'shift', '`')
+        time.sleep(1)
+        text = f'sudo apt install {app}'
+        speed = 0.1
+        pyautogui.write(text, interval=speed)
+        pyautogui.hotkey('enter')
+        time.sleep(1)
+        pyautogui.write(pas, interval=speed)
+        pyautogui.hotkey('enter')
 
-#------------------------------------------------
+        #----------------------------------------
 
-elif skills == 5:
-    print(type_persian('اسم کتابخونه ات چی بود؟'))
-    ketabkhoneh = input()
-    pyautogui.hotkey('ctrl', 'shift', '`')
-    time.sleep(1)
-    text = f'pip install {ketabkhoneh}'
-    speed = 0.1
-    pyautogui.write(text, interval=speed)
-    pyautogui.hotkey('enter')
+    elif skills == 3:
+        print(type_persian('اسم برنامه ات چی بود؟'))
+        app = input()
+        pyautogui.hotkey('ctrl', 'shift', '`')
+        time.sleep(1)
+        text = f'apt search {app}'
+        speed = 0.1
+        pyautogui.write(text, interval=speed)
+        pyautogui.hotkey('enter')
+
+        #----------------------------
+
+    elif skills == 4:
+        print(type_persian('اسم برنامه ات چی بود؟'))
+        app = input()
+        pyautogui.hotkey('ctrl', 'shift', '`')
+        time.sleep(1)
+        text = f'apt show {app}'
+        speed = 0.1
+        pyautogui.write(text, interval=speed)
+        pyautogui.hotkey('enter')
+
+        #------------------------------------------------
+
+    elif skills == 5:
+        print(type_persian('اسم کتابخونه ات چی بود؟'))
+        ketabkhoneh = input()
+        pyautogui.hotkey('ctrl', 'shift', '`')
+        time.sleep(1)
+        text = f'pip install {ketabkhoneh}'
+        speed = 0.1
+        pyautogui.write(text, interval=speed)
+        pyautogui.hotkey('enter')
+
+print(type_persian('خدانگهدار'))
