@@ -1,6 +1,10 @@
 from os import rename
 import pyautogui
 import time
+import random
+import datetime
+
+#------------------------------------------------
 
 #!/usr/bin/env python
  
@@ -262,108 +266,224 @@ def checker_do_not_use(string , value):
         string = string.replace("ه","ه")
         string = string.replace("ی","ی")
     return string
-#--------------------------------------
+
+#------------------------------------------------
+
 print(type_persian('سلام'))
 
 while True:
-    # print(type_persian('هر وقت خواستی خارج شی بگو) خروج ('))
-    
-    # get=input()
-    # if get == 'خروج':
-    #     break
-
-    # if "سلام" in get:
 
     print(type_persian(' کار هایی که من می تونم انجام بدم ایناس:'))
+
     print(type_persian(')۱(لیست برنامه ها رو نشونت بدم '))
+    
     print(type_persian(')۲( برنامه نصب کنم'))
+    
     print(type_persian(')۳(جستجو در توضیحات بسته انجام بدم'))
+    
     print(type_persian(')۴(نمایش جزیات بسته رو بگم'))
+    
     print(type_persian(')۵( کتابخونه پایتون نصب کنم'))
+    
+    print(type_persian('بلدم جوک هم بگم اگه هم جوک نصفه بود صفحه روکوچیک کن '))
+    
+    print(type_persian('بلدم تاریخ و ساعت رو بگم'))
 
     print(type_persian('فقط اگه موقع تایپ کردن دیدی حروف جابه جا شده نگران نباش من می فهمم'))
+    
     print(' \U0001F609')
+    
     print(type_persian('حالا کدومو بدم؟ شماره اش را بنویس به انگلیسی باشه لطفا مثلا 1,2 و...'))
+    
     print(type_persian('اگه خواستی دیگه ادامه ندی باید بنویسی ) خروج ('))
+    
     print(type_persian('  فقط وقتی کار رو انجام دادم اون پنجره ی  )hsad(  رو ببند'))
+    
     skills = input()
+    
     if 'خروج' in skills :
         break
+    
+    elif "تاریخ" in skills:
+        x = datetime.datetime.now()
+        print(x)
+        print('')
+
+    elif "زمان" in skills:
+        x = datetime.datetime.now()
+        print(x)
+        print('')
+
+    elif "ساعت" in skills:
+        x = datetime.datetime.now()
+        print(x)
+        print('')
+
+    elif "امروز" in skills:
+        x = datetime.datetime.now()
+        print(x)
+        print('')
+
+    elif "چندم" in skills:
+        x = datetime.datetime.now()
+        print(x)
+        print('')
+
+    elif 'جوک' in skills :
+    
+        randomjok = random.randint(1, 11)
+    
+        if randomjok == 1:
+            compeyoterjok = 'چن وخ پیش به پسر عموم گفتم واسم ایمیل بساز رمزشم واسم بفرست گفت باشه آدرس ایمیلمو فرستاد، گفتم پس رمزش کو؟ گفت واست ایمیل کردم من قضاوت رو به کارشناسا واگذار میکنم '
+        
+        elif randomjok == 2:
+            compeyoterjok ='تخمه آفتابگردون كيلويی ۹۳ تومن تسبيح دونه‌ای ۰۴ تومن كاپشن پفی ۰۰۴ تومن شلوار شيش جيب ۰۸۲ تومن كتونی تايگر فيک ۰۸۱ تومن! واسه سر كوچه الاف واستادن و تخمه شكستن تو ايران الان حدودا ۱ تومن سرمايه لازمه! '
+
+        elif randomjok == 3:
+            compeyoterjok ='سوالات متداول از مامان: گشنمه….  شام کی حاضر میشه!؟  سردمه!!  پیرهنم کجاست!؟  اون شلوار مشکیمو شستی!؟  نمیتونم پیداش کنم!!  ناهارچی داریم!؟  این چرا اتو نداره!؟  سوالات متداول از بابا: مامان کجاست؟! '
+
+        elif randomjok == 4:
+            compeyoterjok ='یک معمای خیلی جالب: سه تابچه تو خونه بودن اولی عشق نام داشت دومی محبت نام داشت و سومی دوستت دارم بود یک روز پدرشان عشق و محبت رابه بازار برد حالا بگو کی خونه مونده؟؟؟؟ نشنیدم بازم بگو؟ واقعاً؟!!!!! '
+
+        elif randomjok == 5:
+            compeyoterjok ='یارو میره هارد بخره میگه هارد ۰۴۶ میخوام حیف نون هارد ۰۰۵ میاره بهش میگه گفتم ۰۴۶ میگه: ناراحت نباش جا وا می‌کنه…!!! '
+
+        elif randomjok == 7:
+            compeyoterjok ='کبوتر با کبوتر باز باران با ترانه میخورد بر بامش بیش برفش بیشتر آمدی جانم به قربانت ولی حالا چرا عاقل کند کاری که باز آید به کنعان غم مخور خربزه با پوست موزو میندازی زمین هوا میره نمیدونی تا کجا میره!! '
+
+        elif randomjok == 8:
+            compeyoterjok ='ای کسانی که با خیال راحت ماسک فیلتر دار استفاده می‌کنید! بدانید و آگاه باشید که کرونا در ایران مانند شهروندان این کشور به فیلتر شکن مجهز است!!'
+
+        elif randomjok == 9:
+            compeyoterjok ='ﺑﺮﯾﺰﺵ ﺑﯿﻨﻰ ﺩﺍﺭﻡ. ﺭﻓﺘﻢ ﺩﺍﺭﻭﺧﻮﻧﻪ ﻗﺮﺹ ﺿﺪﺣﺴﺎﺳﯿﺖ ﺑﮕﯿﺮﻡ. ﺗﻮ ﻋﻮﺍﺭﺽ ﺟﺎﻧﺒﯿﺶ ﻧﻮﺷﺘﻪ ﺳﺮ ﺩﺭﺩ و ﺳﺮ ﮔﯿﺠﻪ ﺣﺎﻟﺖ تهوع ﺍﺧﺘﻼﻝ ﺩﺭ ﺧﻮﺍﺏ ﻧﺎﺭﺳﺎﯾﻰ ﮐﺒﺪ ﺳﮑﺘﻪ ﻗﺒﻠﻰ و ﺳﮑﺘﻪ ﻯ ﻣﻐﺰﻯﻣﺮﮒ ﻧﺎﮔﮭﺎﻧﻰ!… ﮪﯿﭽﻰ ﺩﯾﮕﻪ … ﭘﺸﯿﻤﻮﻥ ﺷﺪﻡ با آستینم پاکش می‌کنم ﺍﻣﻨﯿﺘﺶ ﺑﯿﺸﺘﺮﻩ؟!'
+
+        elif randomjok == 10:
+            compeyoterjok ='ﺍﮔﺮ ﺩﯾﺪﯼ ﺟﻮﺍﻧﯽ ﺑﺮﺩﺭﺧﺘﯽ ﺗﮑﯿﻪ ﮐﺮﺩﻩ ﺳﺮﯾﻊ ﺑﯿﺎﺭﯾﺪﺵ ﮐﻨﺎﺭ ﯾﻬﻮ ﮔﻼﺑﯽ ﭼﯿﺰﯼ می‌خوره ﺗﻮﺳﺮﺵ چهار تا فرمول ﺑﻪ ﻓﯿﺰﯾﮏ ﺍﺿﺎﻓﻪ ﻣﯿﮑﻨﻪ ﺑﺪﺑﺨﺖ می‌شیم'
+        
+        compeyoterjok = str(compeyoterjok)
+
+        print(type_persian(compeyoterjok))
+        print('')
+
 
     elif skills == '1':
         skills = int(skills)
+    
     elif skills == '2':
         skills = int(skills)
+    
     elif skills == '3':
         skills = int(skills)
+    
     elif skills == '4':
         skills = int(skills)
+    
     elif skills == '5':
         skills = int(skills)
     
     
     else: 
         while True:
-            print(type_persian('متوجه نشدم'))
+            
+            print(type_persian('متوجه نشدم یک بار دیگه دستور بزنم تا دوباره برگردی به مرحله قبل'))
+            
             skills_1 = input()
+            
             if skills_1 == 'خروج':
                 break
+            
             elif skills_1 == '1':
                 break
+            
             elif skills_1 == '2':
                 break
+            
             elif skills_1 == '3':
                 break
+            
             elif skills_1 == '4':
                 break
+            
             elif skills_1 == '5':
                 break
-
+            
+            elif skills_1 == 'جوک':
+                break
+            
+            elif "تاریخ" in skills:
+                break
+            
+            elif "زمان" in skills:
+                break
+            
+            elif "ساعت" in skills:
+                break
+            
+            elif "امروز" in skills:
+                break
+            
+            elif "چندم" in skills:
+                break
     
     if skills == 1:
+        
         pyautogui.hotkey('ctrl', 'shift', '`')
+        
         time.sleep(1)
+        
         text = 'apt list'
         speed = 0.1
         pyautogui.write(text, interval=speed)
         pyautogui.hotkey('enter')
 
-        #------------------------------------------------------------
+        #------------------------------------------------
 
     elif skills == 2:
         print(type_persian('میشه پسوردت رو بگی لطفا؟'))
         pas = input()
+        
         print(type_persian('اسم برنامه ات چی بود؟'))
         app = input()
+        
         pyautogui.hotkey('ctrl', 'shift', '`')
+        
         time.sleep(1)
+        
         text = f'sudo apt install {app}'
         speed = 0.1
         pyautogui.write(text, interval=speed)
         pyautogui.hotkey('enter')
+        
         time.sleep(1)
+        
         pyautogui.write(pas, interval=speed)
         pyautogui.hotkey('enter')
 
-        #----------------------------------------
+        #------------------------------------------------
 
     elif skills == 3:
         print(type_persian('اسم برنامه ات چی بود؟'))
         app = input()
+        
         pyautogui.hotkey('ctrl', 'shift', '`')
+        
         time.sleep(1)
+        
         text = f'apt search {app}'
         speed = 0.1
         pyautogui.write(text, interval=speed)
         pyautogui.hotkey('enter')
 
-        #----------------------------
+        #------------------------------------------------
 
     elif skills == 4:
         print(type_persian('اسم برنامه ات چی بود؟'))
         app = input()
+        
         pyautogui.hotkey('ctrl', 'shift', '`')
+        
         time.sleep(1)
+        
         text = f'apt show {app}'
         speed = 0.1
         pyautogui.write(text, interval=speed)
@@ -374,8 +494,11 @@ while True:
     elif skills == 5:
         print(type_persian('اسم کتابخونه ات چی بود؟'))
         ketabkhoneh = input()
+        
         pyautogui.hotkey('ctrl', 'shift', '`')
+        
         time.sleep(1)
+        
         text = f'pip install {ketabkhoneh}'
         speed = 0.1
         pyautogui.write(text, interval=speed)
