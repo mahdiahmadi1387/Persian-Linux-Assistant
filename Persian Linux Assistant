@@ -385,7 +385,7 @@ while True:
     else: 
         while True:
             
-            print(type_persian('متوجه نشدم یک بار دیگه دستور بزنم تا دوباره برگردی به مرحله قبل'))
+            print(type_persian('متوجه نشدم یک بار دیگه دستور درست رو بزن تا دوباره برگردی به مرحله قبل'))
             
             skills_1 = input()
             
