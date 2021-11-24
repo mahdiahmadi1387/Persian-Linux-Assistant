@@ -329,7 +329,8 @@ while True:
         while True:
             char = string.ascii_letters + string.punctuation + string.digits
             print(type_persian('چند رقمی باشه؟'))
-            t = input()            
+            t = input()  
+            t = int(t)          
             passw = "".join(choice(char) for x in range(randint(t)))
             print('')
             print(passw)
@@ -344,6 +345,7 @@ while True:
             char = string.ascii_letters + string.punctuation + string.digits
             print(type_persian('چند رقمی باشه؟'))
             t = input()
+            t = int(t)
             passw = "".join(choice(char) for x in range(randint(t)))
             print('')
             print(passw)
